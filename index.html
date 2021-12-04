@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<style>
+
+body
+{
+	background-color: blueviolet;
+}
+h2
+{
+	font-style: italic;
+}
+
+
+#skills
+{
+display: none;
+margin: 20px;
+padding: 20px;
+background-color: whitesmoke;
+
+}
+#skill
+{
+display: none;
+margin: 20px;
+padding: 20px;
+background-color: black;
+color: whitesmoke;
+
+}
+.details
+{
+text-align: center;
+animation-name: decorate;
+background-color: powderblue;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+@keyframes decorate
+{
+	from{background-color: powderblue;}
+	to{background-color: green;}
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div class="details">
+<h2>Name=M.karthik<h2>
+	<h2>College=National institute of technology,patna<h2>
+<h2>branch=computer science engineering<h2>
+	<h2>intrests=coding,web development and cyber security</h2>
+</div>
+
+
+<button onclick="fun()">click for skills</button>
+
+<div id="skills">
+	
+<h2>coding=c,c++,java</h2>
+<h2>front-end:Html,css,java script</h2>
+<h2>code-chef:4star <a href="https://www.codechef.com/users/karthikreddy12">code-chef link</a></h2>
+<h2>hacker rank:6star <a href="https://www.hackerrank.com/karthik1coder">hacker rank-link</a></h2>
+</div>
+
+<button onclick="fun2()">click for more details</button>
+
+<div id="skill">
+	<h2>10th grade cgpa:9.5</h2>
+	<h2>jee mains rank:11981</h2>
+	<h2>jee advance rank:8500</h2>
+</div>
+
+
+
+<script>
+
+function fun()
+{
+	document.getElementById("skills").style.display="block";
+	
+}
+function fun2()
+{
+	document.getElementById("skill").style.display="block";
+	
+}
+
+</script>
+
+</body>
+</html>
